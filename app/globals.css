@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --font-kanit: 'Kanit', sans-serif;
+  background-color: #0C0C0C;
+}
+
+html, body, #root, .main-wrapper {
+  background-color: #0C0C0C;
+  color: #D7E2EA;
+  font-family: var(--font-kanit), 'Kanit', sans-serif;
+}
+
+.hero-heading {
+  background: linear-gradient(180deg, #646973 0%, #BBCCD7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Custom scrollbar matching dark theme */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0C0C0C;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #252830;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #646973;
+}
+
+/* Selection highlight */
+::selection {
+  background: rgba(182, 0, 168, 0.4);
+  color: #FFFFFF;
+}
